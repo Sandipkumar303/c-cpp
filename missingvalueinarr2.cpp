@@ -20,18 +20,16 @@ int main()
 }
 
  }
- int index;
+  int index=0;
  for(int i=0; i<5; ++i)
- 
  {
-      index=arr[i+1];
-    for(int j=arr[i]+1; j<index; ++j)
-    {
-        cout<<j<<endl;
-        
-    }
+index=arr[i+1];
+if(index-arr[i]!=1)
+{
+    cout<<arr[i]+1;
+}
  }
-
+ 
 }
  
 
