@@ -2,12 +2,12 @@
 using namespace std;
 int main()
 {
-    int arr[]={3,5,1,4,7};
+    int arr[]={3,5,1,4,7,9};
     int temp;
    
- for(int i=0; i<5; ++i)
+ for(int i=0; i<6; ++i)
  {
-    for(int j=i+1; j<5; ++j)
+    for(int j=i+1; j<6; ++j)
     {
          if (arr[i]>arr[j])
          {
@@ -18,17 +18,20 @@ int main()
     }
      
 }
-// cout<<arr[i];
+
  }
  int index;
  for(int i=0; i<5; ++i)
  
  {
-    if(arr[i+1]-arr[i]!=1)
+      index=arr[i+1];
+    for(int j=arr[i]+1; j<index; ++j)
     {
-      index=arr[i+1]-1;
+        cout<<j<<endl;
+        
     }
  }
+
 }
  
 
